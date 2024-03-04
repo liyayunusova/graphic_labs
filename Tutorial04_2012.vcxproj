@@ -341,7 +341,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <FxCompile Include="Tutorial04.fx">
+    <None Include="Tutorial04.fx">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Effect</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Effect</ShaderType>
@@ -352,7 +352,11 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Effect</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Effect</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">Effect</ShaderType>
-    </FxCompile>
+      <FileType>Document</FileType>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</DeploymentContent>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tutorial04.cpp" />

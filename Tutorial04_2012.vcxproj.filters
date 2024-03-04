@@ -22,8 +22,8 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="Tutorial04.fx">
+    <None Include="Tutorial04.fx">
       <Filter>Shaders</Filter>
-    </FxCompile>
+    </None>
   </ItemGroup>
 </Project>
